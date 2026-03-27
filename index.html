@@ -1,34 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FikraLabz Education</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
-        h1 { color: #2c3e50; }
-        a.button {
-            display: inline-block; padding: 10px 15px; margin: 10px 0;
-            background: #3498db; color: white; text-decoration: none;
-            border-radius: 5px;
-        }
-        a.button:hover { background: #2980b9; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FikraLabz Education</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  background: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 40px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: #f4f4f4;
+  margin: 15px;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+
 </head>
 <body>
-    <h1>Welcome to FikraLabz Education</h1>
-    <p>Choose a service below:</p>
 
-    <!-- Language classes -->
-    <a href="#" class="button">English/Swahili Classes</a><br>
+<!-- NAVBAR -->
+<nav>
+  <div><strong>FikraLabz</strong></div>
+  <div>
+    <a href="#english">English</a>
+    <a href="#swahili">Swahili</a>
+    <a href="#yoga">Yoga</a>
+  </div>
+</nav>
 
-    <!-- Yoga -->
-    <a href="#" class="button">Yoga Classes</a><br>
+<!-- HERO -->
+<div class="hero">
+  <h1>Learn. Grow. Improve.</h1>
+  <p>English • Swahili • Yoga Classes</p>
+</div>
 
-    <!-- Downloadable materials -->
-    <a href="#" class="button">Download Materials</a><br>
+<!-- ENGLISH -->
+<div class="section" id="english">
+  <h2>English Classes</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b">
+      <p>Beginner-friendly English lessons.</p>
+      <a class="btn" href="https://wa.me/255XXXXXXXXX">Join</a>
+    </div>
+  </div>
+</div>
 
-    <!-- Contact -->
-    <p>Contact me on WhatsApp: <a href="https://wa.me/YOURNUMBER">Click to message</a></p>
+<!-- SWAHILI -->
+<div class="section" id="swahili">
+  <h2>Swahili Classes</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+      <p>Learn Swahili from scratch.</p>
+      <a class="btn" href="https://wa.me/255XXXXXXXXX">Join</a>
+    </div>
+  </div>
+</div>
+
+<!-- YOGA -->
+<div class="section" id="yoga">
+  <h2>Yoga Classes</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3">
+      <p>Relax and improve flexibility.</p>
+      <a class="btn" href="https://wa.me/255XXXXXXXXX">Join</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Contact: WhatsApp</p>
+  <p>© 2026 FikraLabz</p>
+</footer>
+
 </body>
 </html>
